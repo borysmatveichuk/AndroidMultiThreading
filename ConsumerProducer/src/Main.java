@@ -2,7 +2,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        final ConsumerProducer cp = new ConsumerProducer();
+        //final ConsumerProducer cp = new ConsumerProducer();
+        final ConsumerProducerBQ cp = new ConsumerProducerBQ();
 
         Thread t1 = new Thread(new Runnable() {
             @Override
