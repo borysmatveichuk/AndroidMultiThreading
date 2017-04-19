@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidMultiThreading.iml" filepath="$PROJECT_DIR$/AndroidMultiThreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/ConsumerProducer/ConsumerProducer.iml" filepath="$PROJECT_DIR$/ConsumerProducer/ConsumerProducer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RaceCondition/RaceCondition.iml" filepath="$PROJECT_DIR$/RaceCondition/RaceCondition.iml" />
     </modules>
   </component>
 </project>
