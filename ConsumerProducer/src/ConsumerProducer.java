@@ -2,7 +2,7 @@ import java.util.LinkedList;
 
 public class ConsumerProducer {
     private LinkedList<Integer> list = new LinkedList<Integer>();
-    private final int LIMIT = 10;
+    private final int LIMIT = 10000;
     private Object lock = new Object();
 
     public void produce() throws InterruptedException {
@@ -13,7 +13,7 @@ public class ConsumerProducer {
                     lock.wait();
                 }
                 list.add(value++);
-                System.out.println("produce " + list.get(list.size()-1));
+                System.out.println("+ produce " + list.get(list.size()-1) + " size is " + list.size());
                 lock.notify();
             }
         }
@@ -26,7 +26,7 @@ public class ConsumerProducer {
                     lock.wait();
                 }
                 int value = list.removeFirst();
-                System.out.println("consume " + value);
+                System.out.println("- consume " + value + " size is " + list.size());
                 lock.notify();
             }
         }
